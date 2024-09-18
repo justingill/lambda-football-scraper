@@ -2,6 +2,7 @@
 
 ## Information
 
+*Note: This repo is not structured as AWS Lambda flattens the file structure anyways*
 
 This is a personal project I built to pull up-to-date Premier League data on all 514 current players and gets over 200 individual stats on each player. 
 
@@ -9,11 +10,7 @@ It does this by parsing the HTML of a website for the data and processing it usi
 
 The project is invoked in production using a AWS Lambda function which uploads the data to an S3 bucket and copies it to another S3 bucket. I then take one of these buckets, create a presigned URL and then emails it to myself and a couple friends every week. This is all coordinated by using AWS Event Bridge and AWS ECR to deploy and run the Lambda in a containerized environment to ensure consistency.
 
-*Note: This repo is not structured as AWS Lambda flattens the file structure anyways*
-
-
 ![alt text](<screenshot.png>)
-
 
 
 ## How to run
