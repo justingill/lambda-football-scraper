@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "scraper-api"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "scraper-api"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "*"
+black = "*"
+fastapi = "*"
+uvicorn = "*"
+bs4 = "*"
+pandas = "*"
+boto3 = "*"
+yagmail = "*"
+
+[tool.black]
+line-length = 70
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
