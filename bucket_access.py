@@ -25,7 +25,7 @@ def s3_copy():
         )
     except ClientError as e:
         logging.error(e)
-        raise ClientError("Presigned URL Could not be created.")
+        raise ClientError("Copy in S3 could not be completed.")
 
     return response
 
